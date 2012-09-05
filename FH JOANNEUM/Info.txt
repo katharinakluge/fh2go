@@ -1,0 +1,31 @@
+Impressum und Kontakt / Legal notice and contact:
+
+FH JOANNEUM Gesellschaft mbH
+Alte Poststraße 149
+A-8020 Graz
+Tel.: +43 (0)316 5453-0
+E-Mail: info@fh-joanneum.at
+
+Rechtsform/Legal form: GmbH
+Firmenbuchgericht/Court of registry: Landesgericht für ZRS Graz
+Firmenbuchnummer/Company registration: FN 125888 f
+DVR: 0813559
+UID-Nr.: ATU 42361001
+
+Inhalt / Content:
+-------
+App - Katharina Kluge Katharina.kluge.itm09@fh-joanneum.at
+FH2Go for iOS : GIT
+
+Icon Set - ???
+
+News und Events / News and Events - Cornelia Schuss, Bettina Stadler, Kathrin Podbrecnik, Thomas Winkler (all PR/Marketing)
+and Degree Programmes-/ Department-Webwriters
+
+FHPI - Markus Deutsch, ITM 2009-2012
+schedule - Thomas Radeke, IND 2008-2011
+http://almaty.fh-joanneum.at/stundenplan/
+
+Third Party:
+TouchXML - Jonathan Wight https://github.com/TouchCode/TouchXML
+iCalendar 

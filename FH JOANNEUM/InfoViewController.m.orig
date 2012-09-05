@@ -1,0 +1,61 @@
+//
+//  InfoViewController.m
+//  FH JOANNEUM
+//
+//  Created by Katharina Kluge on 25/07/12.
+//  Copyright (c) 2012 Katharina Kluge. All rights reserved.
+//
+
+#import "InfoViewController.h"
+<<<<<<< HEAD
+/*
+@interface InfoViewController ()
+
+@end
+*/
+=======
+
+>>>>>>> eea1ff3657c8115b8ba4b5b6953f1b15ba9ef72b
+@implementation InfoViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"InfoViewControler");
+	// Do any additional setup after loading the view.
+    
+    
+    NSString *infoTextPath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"txt"];
+    NSError *error = nil;
+    
+    
+    NSString *infoText = [NSString stringWithContentsOfFile:infoTextPath encoding:NSUTF8StringEncoding error:&error];
+    
+    if(error !=nil){
+        NSLog(@"An Error has been occured: %@", [error localizedDescription]);
+    }else {
+        _viewInfoText.text = infoText;
+    }
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+@end

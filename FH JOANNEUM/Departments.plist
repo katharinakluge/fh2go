@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>AEE</string>
+	<string>AIM</string>
+	<string>AMD</string>
+	<string>APM</string>
+	<string>ASE</string>
+	<string>AUD</string>
+	<string>BBM</string>
+	<string>BBW</string>
+	<string>BIO</string>
+	<string>BMI</string>
+	<string>BVS</string>
+	<string>BVW</string>
+	<string>DAE</string>
+	<string>DIO</string>
+	<string>EHT</string>
+	<string>ERG</string>
+	<string>ETM</string>
+	<string>EVU</string>
+	<string>FZT</string>
+	<string>GBP</string>
+	<string>GMT</string>
+	<string>GTM</string>
+	<string>HCE</string>
+	<string>IDB</string>
+	<string>IDE</string>
+	<string>IEL</string>
+	<string>IMA</string>
+	<string>IND</string>
+	<string>IRM</string>
+	<string>ISM</string>
+	<string>ISW</string>
+	<string>ITM</string>
+	<string>IWB</string>
+	<string>IWI</string>
+	<string>JPR</string>
+	<string>JUK</string>
+	<string>LAV</string>
+	<string>LOG</string>
+	<string>MEM</string>
+	<string>MET</string>
+	<string>MID</string>
+	<string>MIG</string>
+	<string>MIM</string>
+	<string>NUT</string>
+	<string>OG</string>
+	<string>PTH</string>
+	<string>PTO</string>
+	<string>PYB</string>
+	<string>PYG</string>
+	<string>R2S</string>
+	<string>RAD</string>
+	<string>SAG</string>
+	<string>SAM</string>
+	<string>SBG</string>
+	<string>SBK</string>
+	<string>SBL</string>
+	<string>SBS</string>
+	<string>SGA</string>
+	<string>SOA</string>
+	<string>SWD</string>
+	<string>WSA</string>
+</array>
+</plist>

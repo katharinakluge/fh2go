@@ -1,0 +1,16 @@
+As for now the requirement is to implement the application in Xcode and then run it on the simulator, because it is not yet handed in to Apple for a validation. Xcode should have the version of 4.3 or higher.
+
+XCode: Version 4.3 or higher
+
+Type this command into the terminal to clone the repository : 
+            git clone https://github.com/katharinakluge/fh2go.git
+
+change with "cd" to the folder of fh2go
+type into the terminal: git submodule init
+                and:    git submodule update
+        to update the used submodules, otherwise the project will not work
+
+open Xcode and go in the menu to "File>Open..." and choose of the project the folder fh2go
+choose for running the project "FH JOANNEUM > iPhone 5.0 Simulator" and click on "Run"
+
+The programm should run now.

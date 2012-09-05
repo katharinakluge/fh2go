@@ -1,0 +1,83 @@
+//
+//  ScheduleViewController.m
+//  FH JOANNEUM
+//
+//  Created by Katharina Kluge on 25/07/12.
+//  Copyright (c) 2012 Katharina Kluge. All rights reserved.
+//
+
+#import "ScheduleViewController.h"
+#import <EventKit/EventKit.h>
+#import <EventKitUI/EventKitUI.h>
+#import "KalDataProvider.h"
+
+@interface ScheduleViewController ()
+
+@end
+
+@implementation ScheduleViewController
+
+@synthesize dataProvider = _dataProvider;
+@synthesize schedule = _schedule;
+
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    _dataProvider = [[KalDataProvider alloc] init];
+    [self setDataSource:_dataProvider];
+    self.delegate = self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Today" style:UIBarButtonItemStyleBordered target:self action:@selector(showAndSelectToday)];
+}
+
+- (void)showAndSelectToday
+{
+    [self showAndSelectDate:[NSDate date]];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+<<<<<<< HEAD
+{    
+=======
+{
+ //   [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
+    
+>>>>>>> eea1ff3657c8115b8ba4b5b6953f1b15ba9ef72b
+    // Display a details screen for the selected event/row.
+    EKEventViewController *vc = [[EKEventViewController alloc] init];
+    UITableView *eventTableView = [[vc.view subviews]objectAtIndex:0];
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Background.png"]];
+    [eventTableView setBackgroundView:backgroundView];
+    Schedule *schedule = [_dataProvider eventAtIndexPath:indexPath];
+    vc.event = [schedule eventValue];
+    vc.allowsEditing = NO;
+    [vc.navigationItem setRightBarButtonItem:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+@end
