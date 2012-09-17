@@ -20,6 +20,7 @@
 
 @synthesize examArray = _examArray;
 
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -110,7 +111,7 @@
     
     
    /* 
-    Configures the cell, but the output is not as wanted as the returning information of the server provides different data
+    Configures the cell, and shows the user the name of the exam, when it is, if the user is enrolled or when the last day for enrollment is 
     */
     Exam *exam = [[[self.examArray objectAtIndex:indexPath.section] exams] objectAtIndex:indexPath.row];
     
@@ -124,6 +125,7 @@
     }
     
     [cell.dateLabel setText:exam.dateString];
+    
     
     return cell;
 }

@@ -46,7 +46,7 @@
     }
     
     // create URL string with username and password included
-    NSString *requestString = [NSString stringWithFormat:@"https://ws.fh-joanneum.at/getmarks.php?u=%@&p=%@&k=LOvkZCPesk",username,password];
+    NSString *requestString = [NSString stringWithFormat:@"https://ws.fh-joanneum.at/getexams.php?u=%@&p=%@&k=LOvkZCPesk",username,password];
     
     /*
      creates the request from the URL string
